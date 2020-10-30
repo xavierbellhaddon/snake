@@ -11,7 +11,7 @@ function main(currentTime) {
     if (gameOver) {
         if (confirm("You lost. Press OK to restart.")) {
             // window.location = "/";
-            window.location.href;
+            window.location.replace(window.location.pathname + window.location.search + window.location.hash);
         }
         return
     }
